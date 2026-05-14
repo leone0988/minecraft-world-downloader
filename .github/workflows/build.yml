@@ -26,8 +26,7 @@ jobs:
       - name: Get JAR file
         id: jar
         run: |
-          JAR_FILE=$(find target -name "*.jar" | head -n 1)
-          echo "jar_file=$JAR_FILE" >> $GITHUB_OUTPUT
+          JAR_FILE="target/world-downloader.jar"
 
       - name: Create Release
         id: release
